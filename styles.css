@@ -216,3 +216,91 @@ footer {
   }
 }
 
+#nav-link section.nav-active a {
+  font-weight: 700;
+  border-bottom: 2px solid currentColor;
+}
+
+@media (max-width: 768px) {
+  #hamburger {
+    display: flex;
+  }
+ 
+  #nav-link {
+    flex-wrap: wrap;
+  }
+ 
+  /* Hide all nav sections on mobile by default */
+  #nav-link > section {
+    display: none;
+    width: 100%;
+  }
+ 
+  /* Show them when nav-open is active */
+  #nav-link.nav-open > section {
+    display: block;
+  }
+}
+
+body {
+  background: linear-gradient(135deg, #fdf2f8, #c08497, #4c1d95, #1e1b4b);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#subscription-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin: 1.5rem 0;
+}
+
+#subscription-form input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #c08497;
+  border-radius: 8px;
+  background: #fdf2f8;
+  color: #1e1b4b;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#subscription-form input:focus {
+  border-color: #4c1d95;
+}
+
+#subscription-form button {
+  padding: 0.75rem 1rem;
+  background: #4c1d95;
+  color: #fdf2f8;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#subscription-form button:hover {
+  background: #1e1b4b;
+}
+
+#contact-info img {
+  width: 32px;
+  height: 32px;
+  margin: 0 8px;
+  transition: transform 0.2s ease;
+  vertical-align: middle;
+}
+
+#contact-info img:hover {
+  transform: scale(1.2);
+}
