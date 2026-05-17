@@ -304,3 +304,27 @@ body {
 #contact-info img:hover {
   transform: scale(1.2);
 }
+
+
+.badge-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 1rem 0 1.5rem;
+}
+
+.badge {
+  background: #4c1d95;
+  color: #fdf2f8;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+  cursor: default;
+}
+
+.badge:hover {
+  background: #c08497;
+  transform: scale(1.05);
+}
