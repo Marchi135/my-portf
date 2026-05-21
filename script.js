@@ -47,3 +47,16 @@ document.querySelectorAll("#nav-link a").forEach((link) => {
 
 // Show Home section by default on load
 showSection("introduction-section");
+
+const hamburger = document.getElementById("hamburger");
+const navLink = document.getElementById("nav-link");
+
+hamburger.addEventListener("click", () => {
+  navLink.classList.toggle("nav-open");
+});
+
+navLink.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    navLink.classList.remove("nav-open");
+  });
+});   

@@ -328,3 +328,35 @@ body {
   background: #c08497;
   transform: scale(1.05);
 }
+
+#hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+#hamburger span {
+  width: 24px;
+  height: 2px;
+  background: #fdf2f8;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  #hamburger {
+    display: flex;
+  }
+}
+
+#nav-link > section {
+  display: none;
+  width: 100%;
+}
+
+#nav-link.nav-open > section {
+  display: block;
+}
