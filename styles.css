@@ -360,3 +360,12 @@ body {
 #nav-link.nav-open > section {
   display: block;
 }
+
+#logo-img {
+  width: 32px;
+  height: 32px;
+  margin: 0 8px;
+  transition: transform 0.2s ease;
+  vertical-align: middle;
+  border-radius: 20px;
+  }
